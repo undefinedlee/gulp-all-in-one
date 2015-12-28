@@ -1,6 +1,6 @@
 {
   "name": "gulp-all-in-one",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "all in one",
   "main": "index.js",
   "scripts": {
@@ -26,6 +26,7 @@
     "through2": "^2.0.0"
   },
   "devDependencies": {
-    "gulp": "^3.9.0"
+    "gulp": "^3.9.0",
+    "gulp-stylus": "^2.1.2"
   }
 }
