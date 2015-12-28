@@ -30,7 +30,7 @@
 
 	// e.tpl
 	define("4", function(require, exports, module){
-		module.exports = 'tpl\r\ntpl\r\ntpl';
+		module.exports = 'tpl\ntpl\ntpl';
 	});
 
 	// b.js

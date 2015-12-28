@@ -32,7 +32,7 @@ module.exports = function (name, readFile) {
         allInOne({
         	name: name,
         	src: chunk.history[0],
-            readFile: function(filepath, callback){
+            readFile: readFile ? function(filepath, callback){
                 readFile(filepath, function(config){
                     config = config || {};
 
@@ -56,7 +56,7 @@ module.exports = function (name, readFile) {
                         return _callback();
                     });
                 });
-            }
+            } : null
         }, function(content){
         	chunk.contents = new Buffer(content);
         	this.push(chunk);

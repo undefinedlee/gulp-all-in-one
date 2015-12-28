@@ -27,5 +27,6 @@ gulp.task('default',function(){
 	    				.pipe(callback());
 	    	}
 	    }))
+		//.pipe(allInOne("xxx"))
 	    .pipe(gulp.dest("test/dist"));
 });
